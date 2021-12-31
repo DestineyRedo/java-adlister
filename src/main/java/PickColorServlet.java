@@ -9,7 +9,7 @@ import java.io.IOException;
 public class PickColorServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         req.getRequestDispatcher("pickcolor.jsp").forward(req, res); //doGet gets data from client where dispatcher forwards or includes response in servlet
-    }
+    } //Defines an object that receives requests from the client and sends them to any resource (such as a servlet, HTML file, or JSP file) on the server.
 
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
         String color = req.getParameter("color");
